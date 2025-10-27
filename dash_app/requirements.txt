@@ -1,0 +1,7 @@
+dash
+pandas
+duckdb
+plotly
+sqlalchemy
+pymongo
+mysql-connector-python
