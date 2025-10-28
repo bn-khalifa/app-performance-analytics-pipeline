@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: mysql
+    database: app_data
+    schema: ""
+    tables:
+      - name: apps_info
+
+  - name: mongo
+    tables:
+      - name: reviews
