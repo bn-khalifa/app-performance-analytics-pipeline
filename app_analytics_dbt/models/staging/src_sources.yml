@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw data loaded into DuckDB from MySQL and MongoDB"
+    schema: main
+    tables:
+      - name: apps_info
+        description: "App metadata originally from MySQL"
+      - name: reviews
+        description: "User reviews originally from MongoDB"

@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg_apps
+    description: "Cleaned app metadata from the Play Store"
+    columns:
+      - name: app_name
+        tests: [not_null, unique]
+      - name: installs_count
+        tests: [not_null]
+
+  - name: stg_reviews
+    description: "Cleaned user review data with sentiment metrics"
+    columns:
+      - name: app_name
+        tests: [not_null]
+
+  - name: fact_app_metrics
+    description: "Aggregated metrics combining app info and review sentiment"
